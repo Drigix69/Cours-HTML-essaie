@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ma calculatrice </title>
+    <link href="calculatrice.css" rel="stylesheet">
+</head>
+</head>
+<body>
+	<p>Voici ma calculatrice ci dessous bg</p>
+	<table>
+		<tr>
+		<class 1><td colspan="4" class="Tg">0</td></class>
+		</tr>
+		<tr>
+		<td class="chiffre">1</td>
+		<td class="chiffre">2</td>
+		<td class="chiffre">3</td>
+		<td class="operateur">+</td>
+	</tr>
+	<tr>
+		<td class="chiffre">4</td>
+		<td class="chiffre">5</td>
+		<td class="chiffre">6</td>
+		<td class="operateur">-</td>
+	</tr>
+	<tr>
+		<td class="chiffre" >7</td>
+		<td class="chiffre">8 </td>
+		<td class="chiffre">9 </td>
+		<td class="operateur">x</td>
+	</tr>
+		<tr>
+		<td class="chiffre">0</td>
+		<td class="jsp">(</td>
+		<td class="jsp">)</td>
+		<td class="operateur">÷</td>
+	</tr>
+	</tr>
+		<tr>
+		<td class="jsp">←</td>
+		<td class="jsp">.</td>
+		<td colspan="2" class="jsp">=</td>
+	</tr>
+	
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const screen = document.getElementById('screen');
+      const buttons = document.querySelectorAll('.buttons button');
+
+      let currentInput = '0';
+
+      buttons.forEach(button => {
+        button.addEventListener('click', function() {
+          handleButtonClick(this.innerText);
+        });
+      });
+
+      function handleButtonClick(value) {
+        if (value === '←') {
+          currentInput = currentInput.slice(0, -1);
+        } else if (value === '=') {
+          try {
+            currentInput = eval(currentInput).toString();
+          } catch (error) {
+            currentInput = 'Error';
+          }
+        } else {
+          currentInput += value;
+        }
+
+        updateScreen();
+      }
+
+      function updateScreen() {
+        screen.innerText = currentInput;
+      }
+    });
+    </table>
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+html {
+    background-color: black;
+}
+h1{
+    text-align: right;
+    color: #FF0000;
+}
+
+div{
+    text-align: center;
+    color: white;
+}
+
+section{
+    color: white;
+}
+
+h2{
+    color: orange;
+background-color: white;
+
+}
+
+i{
+    color: orange;
+}
+h3{
+    color: orange;
+background-color: white;
+
+}
+
+p{
+    color: white;
+}
+
+strong{
+    color: green;
+}
+
+ol{
+    color: white;
+}
+
+h4{
+    color: orange;
+background-color: white;
+
+}
+
+.revenu{
+    color: yellow;
+}
+.ChatMoulax{
+    color: #FD7373;
+    font-size: 130%;
+}
+.bouliste{
+    color: green;
+}
+font{
+    color: white;
+}

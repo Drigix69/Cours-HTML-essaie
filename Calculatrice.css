@@ -1,0 +1,45 @@
+table {
+    border-collapse: separate;  
+    background-color: blueviolet;
+    border-radius: 8px;
+    border : 2px solid black;
+    padding:  10px;
+    pointer-events: fill;
+}
+
+td {
+    border: 1px solid black;
+    size: 1;
+    width: 20px;
+    border-radius: 7px;
+    text-align: center;
+    font-family: arial;
+}
+.chiffre{
+    background-color: cyan;
+    width: 20px;
+
+
+}
+.chiffre:hover {
+    background-color: darkcyan;
+    width: 20px;
+    }
+.operateur{
+    background-color: orange;
+    width: 20px;
+}
+.operateur:hover{
+    background-color: darkorange;
+    width: 20px;
+}
+.jsp{
+    background-color: gray;
+}
+.jsp:hover{
+    background-color: darkgray;
+}
+.Tg{
+    background-color: lightgrey;
+    text-align: right;
+}
